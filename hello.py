@@ -7,6 +7,8 @@ Git 工作流练习的「可修改代码」。
     python hello.py
 """
 
+from datetime import datetime
+
 STUDENT = {
     "name": "余乐",
     "class_name": "数据251",
@@ -28,7 +30,10 @@ def show_profile(info: dict) -> None:
     print(f"  班级 : {info['class_name']}")
     print(f"  学号 : {info['student_id']}")
     print_line()
-    print("  版本 : v1.0")
+    print(f"  时间 : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("  版本 : v1.1")
+    print_line("-")
+    print("  欢迎来到云计算实验仓库！")
 
 
 def main() -> None:
